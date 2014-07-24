@@ -1,0 +1,7 @@
+-e git+git@github.com:django/django.git@faacc54ac8601e8bdbfdc8651d68267d570a9c4b#egg=Django-master
+argparse==1.2.1
+django-appconf==0.6
+django-compressor==1.4
+six==1.7.3
+wsgiref==0.1.2
+MySQL-python==1.2.5
