@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-{% load staticfiles compress %}
+{% load static compress %}
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>Home</title>
      {% compress css %}
-    <link href="{% static 'less/project.less' %}" rel="stylesheet" type="text/less">
+    <link href="{% static 'bootstrap/less/bootstrap.less' %}" rel="stylesheet" type="text/less">
     {% endcompress %}
 </head>
 <body>
