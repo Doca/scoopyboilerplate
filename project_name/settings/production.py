@@ -11,9 +11,15 @@ COMPRESS_OFFLINE = True
 COMPRESS_CSS_FILTERS = ('compressor.filters.css_default.CssAbsoluteFilter',
                         'compressor.filters.cssmin.CSSMinFilter',)
 
-COMPRESS_CLOSURE_COMPILER_BINARY = '/usr/local/bin/closure'
-COMPRESS_CLOSURE_COMPILER_ARGUMENTS = '--language_in=ECMASCRIPT5'
-COMPRESS_JS_FILTERS = ('compressor.filters.closure.ClosureCompilerFilter',)
+
+TEMPLATE_LOADERS = (
+    (
+        'django.template.loaders.cached.Loader', (
+            'django.template.loaders.filesystem.Loader',
+            'django.template.loaders.app_directories.Loader',
+        )
+    ),
+)
 
 PREPEND_WWW = True
 
