@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-{% load static from staticfiles %}
+{% templatetag openblock %} load staticfiles {% templatetag closeblock %}
 {% load compress %}
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>Home</title>
      {% compress css %}
-    <link href="{% static 'bootstrap/less/bootstrap.less' %}" rel="stylesheet" type="text/less">
+    <link href="{% templatetag openblock %} static 'bootstrap/less/bootstrap.less'{% templatetag closeblock %}" rel="stylesheet" type="text/less">
     {% endcompress %}
 </head>
 <body>
 <div class="row">
-    <div class="col-md-2"><p>This is home! {{ STATIC_URL }}</p></div>
+    <div class="col-md-2"><p>This is home! </p></div>
 
 </div>
 </body>
