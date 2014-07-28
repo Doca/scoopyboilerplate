@@ -5,9 +5,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Home</title>
-     {% compress css %}
+     {% templatetag openblock %} compress css {% templatetag closeblock %}
     <link href="{% templatetag openblock %} static 'bootstrap/less/bootstrap.less'{% templatetag closeblock %}" rel="stylesheet" type="text/less">
-    {% endcompress %}
+    {% templatetag openblock %} endcompress {% templatetag closeblock %}
 </head>
 <body>
 <div class="row">
